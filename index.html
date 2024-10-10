@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-card">
+            <header>
+                <h1>Quiz Challenge</h1>
+            </header>
+            <div class="game-content">
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+                <div class="question-container">
+                    <p id="category" class="category-text">Category: Science</p>
+                    <h2 id="question">What is the largest planet in our solar system?</h2>
+                </div>
+                <div class="answers-container">
+                    <button class="answer" data-id="1">Earth</button>
+                    <button class="answer" data-id="2">Mars</button>
+                    <button class="answer" data-id="3">Jupiter</button>
+                    <button class="answer" data-id="4">Saturn</button>
+                </div>
+                <div class="status-bar">
+                    <p>Score: <span id="score">0</span></p>
+                    <p>High Score: <span id="high-score">0</span></p>
+                    <p>Time Left: <span id="time">30</span> seconds</p>
+                </div>
+                <button id="start" class="start-btn">Start Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
